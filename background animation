@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background dibuat linear ke kanan atas */
+            background: linear-gradient(to top right,#EE4266,#140958);
+            background-size: 200% 300%;
+            /* animation ngambil nama keyframs, waktu, timing-function */
+            animation: gradient 3s infinite alternate;
+            
+        }
+
+        @keyframes gradient{
+            0%{
+                background-position: 0;
+            }
+            50%{
+                background-position: 25%;
+            }
+            75%{
+                background-position: 50%;
+            }
+            90%{
+                background-position: 100%;
+            }
+            100%{
+                background-position: 0%;
+            }
+        }
+        h1{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animasi Background</h1>
+</body>
+</html>
