@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            background-color: rgb(66, 180, 211);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid{
+            width: 80%;
+            display: grid;
+            background-color: greenyellow;
+            /*grid template columns, jika nilai nya ada 3 maka grid yg ditampilkan ada 3
+              */
+            grid-template-columns: auto auto auto auto auto;
+            padding: 20px;
+            grid-gap: 5px;
+        }
+
+        .grid div{
+            background-color: brown;
+            padding: 50px;
+        }
+
+        .items1{
+            grid-column: 1/3;
+        }
+
+        .item25{
+            grid-column: 1/5;
+        }
+
+        /* .items23{
+            grid-column: 1/5;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+        <div class="items1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="items3">Item 3</div>
+        <div class="items4">Item 4</div>
+        <div class="items5">Item 5</div>
+        <div class="items6">Item 6</div>
+        <div class="items7">Item 7</div>
+        <div class="items8">Item 8</div>
+        <div class="items9">Item 9</div>
+        <div class="items10">Item 10</div>
+        <div class="item11">Item 11</div>
+        <div class="items12">Item 12</div>
+        <div class="items13">Item 13</div>
+        <div class="items14">Item 14</div>
+        <div class="items15">Item 15</div>
+        <div class="items16">Item 16</div>
+        <div class="items17">Item 17</div>
+        <div class="items18">Item 18</div>
+        <div class="items19">Item 19</div>
+        <div class="item20">Item 20</div>
+        <div class="items21">Item 21</div>
+        <div class="items22">Item 22</div>
+        <div class="items23">Item 23</div>
+        <div class="items24">Item 24</div>
+        <div class="items25">Item 25</div>
+        </div>
+    </div>
+</body>
+</html>
